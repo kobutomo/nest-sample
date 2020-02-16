@@ -5,10 +5,16 @@
 
 type Articles {
   title: String!
-  body: String!
   created_at: String!
 }
 
 type Query {
   articles(id: Int): [Articles!]!
+  weather: Weather!
+}
+
+type Weather {
+  title: String!
+  telop: String!
+  description: String!
 }

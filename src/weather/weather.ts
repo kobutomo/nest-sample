@@ -1,10 +1,13 @@
 import { Field, ObjectType } from 'type-graphql';
 
 @ObjectType()
-export class Articles {
+export class Weather {
   @Field()
   title: string;
 
   @Field()
-  created_at: string;
+  telop: string;
+
+  @Field()
+  description: string;
 }
